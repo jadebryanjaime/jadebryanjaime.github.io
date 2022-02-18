@@ -16,7 +16,7 @@ $(document).ready(function () {
 window.onscroll = function () { scrollRotate() };
 function scrollRotate() {
     var navimg = document.getElementById("logo-center");
-    navimg.style.transform = "rotate(" + (window.pageYOffset / 0.5) + "deg)"
+    navimg.style.transform = "rotate(" + (window.pageYOffset / 1) + "deg)"
 }
 
 const checkpoint = 300;
