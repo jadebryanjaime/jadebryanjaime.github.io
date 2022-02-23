@@ -160,9 +160,12 @@ section {
     transform: translateX(-50%);
 }
 .about .about-content{
+    background: #dfe4ea;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 40px;
+    border-radius: 25px;
     justify-content: space-between;
 }
 .about .about-content .left{
@@ -188,7 +191,7 @@ section {
 .about .about-content .right p {
     text-align: justify;
 }
-.about .about-content .right a {
+.about .about-content .left a {
     display: inline-block;
     background: #0086b3;
     color: #fff;
@@ -201,11 +204,13 @@ section {
     border: 2px solid #0086b3;
     margin-top: 20px;
 }
-.about .about-content .right a:hover {    
+.about .about-content .left a:hover {    
     color: #0086b3;
     border: 1px solid #0086b3;
     background: none;
 }
+
+/* career section styling */
 
 
 /* responsive media query */
@@ -279,9 +284,10 @@ section {
         width: 100%;
     }
     .about .about-content .left {
-        display: flex;
+        display: block;
         justify-content: center;
         margin: 0 auto 60px;
+        text-align: center;
     }
     .about .about-content .right {
         flex: 100%;
