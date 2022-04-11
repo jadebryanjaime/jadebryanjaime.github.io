@@ -1,0 +1,44 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="fill-remaining-space"></span>
+  <span>Jade Bryan Jaime</span>
+  <span class="fill-remaining-space"></span>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <div class="user-pic">
+      <img src="../assets/pics/user.png" alt="Hello" width="200" height="200">
+    </div>
+    <div class="user-name">
+      Jade Bryan Jaime
+    </div>
+    <div class="user-position">
+      Programmer
+    </div>
+    <mat-nav-list>
+      <button mat-button class="nav-list-item">
+        <mat-icon>show_chart</mat-icon>
+        Career
+      </button>
+      <button mat-button class="nav-list-item">
+        <mat-icon>person</mat-icon>
+        About Me
+      </button>
+      <button mat-button class="nav-list-item">
+        <mat-icon>grade</mat-icon>
+        Projects
+      </button>
+      <button mat-button class="nav-list-item">
+        <mat-icon> contacts</mat-icon>
+        Contacts
+      </button>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="container">
+      MAIN CONTENT
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
